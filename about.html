@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUGMAN ASSOCIATES</title>
+    
+    
+</head>
+
+
+
+<!--BODY OF WEBSITE-->
+
+<body>
+
+    <!--HEADER-->
+    <header>
+        <a href= "index.html" class="header">
+            <p class="header-button">K.A.</p>
+        </a>
+    </header>
+
+<div class="content-box-2">
+<!-- Navigation Bar (Initially Hidden) -->
+<nav class="nav-bar">
+ 
+    <!--CANDLE GOBLIN BUTTON-->
+    <a href= "project_black_hole.html" class="image-button">
+        <button class="image-button">
+            <img src="C:\Users\rossk\OneDrive\Documents\Kugman Associates Website\folderbutton.png" alt="XXX" width="auto" height="50" >
+           <p class="warning-message">Candle Goblin</p>
+        </button>   
+    </a>
+
+<!--GADFLY BUTTON-->
+    <a href= "project_mosquito.html" class="image-button">
+    <button class="image-button">
+        <img src="C:\Users\rossk\OneDrive\Documents\Kugman Associates Website\folderbutton.png" alt="XXX" width="auto" height="50" >
+       <p class="warning-message">Gadfly</p>
+    </button>   
+    </a>
+
+ <!--ABOUT BUTTON-->
+            <a href= "about.html" class="image-button">
+                <button class="image-button">
+                    <img src="C:\Users\rossk\OneDrive\Documents\Kugman Associates Website\folderbutton.png" alt="XXX" width="auto" height="50" >
+                   <p class="warning-message">About</p>
+                </button>   
+                </a>
+
+<!--BLOG BUTTON-->
+            <a href= "blog.html" class="image-button">
+                <button class="image-button">
+                    <img src="C:\Users\rossk\OneDrive\Documents\Kugman Associates Website\folderbutton.png" alt="XXX" width="auto" height="50" >
+                   <p class="warning-message">Blog</p>
+                </button>   
+                </a>
+
+</nav>
+
+<!--BODY INSIDE-->
+
+<div class="content-box">
+    <div>
+        <p class="guest-message"  style="text-align: center; font-size: 20px; font-weight: bold;"> ROSS KUGMAN </p>
+    </div>
+<div class="gallery" style="text-align: center;">
+    <img  src= "rosspicture.png" style= "width: 120%; height: auto; content: center; padding: 30px; img-align: center; margin-left: 30px;">
+</div>
+<div>
+    <p class="guest-message" style= "text-align: center;:" > This is Mr. Kugman. </p>
+</div>
+<div>
+    <p class= "guest-message" style= "text-align: center;"> <<<<<<>>>>>> </p>
+</div>
+<div>
+    <p class="guest-message" style="text-align: center;"> He has yet to send me his biography, though I requested it two weeks ago. I am sure he is just busy writing and directing. I'm sure. </p>
+</div>
+</div>
+ 
+
+    
+    <div class="padding"></div>
+
+
+    <iframe class= "spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2NALEWd3ZYVubQLvXjZQey?utm_source=generator" width="400px" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>   
+    
+</div>
+    <footer>
+        <p>&copy; 2025 Kugman Associates</p>
+    </footer>
+
+
+    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
+
+    <script>
+    
+
+        window.onSpotifyIframeApiReady = (IFrameAPI) => {
+  const element = document.getElementById('embed-iframe');
+  const options = {
+      uri: 'spotify:episode:7makk4oTQel546B0PZlDM5'
+    };
+  const callback = (EmbedController) => {};
+  IFrameAPI.createController(element, options, callback);
+};
+</div>
+
+
+    </script>
+
+
+    
+</body>
+
+
+
+
+<style>
+    button, a {
+    text-decoration: none;  /* Removes underline */
+    color: inherit;  /* Keeps the original text color */
+}
+a:visited {
+    color: inherit;  /* Prevents the purple "visited" link effect */
+}
+
+a:active, a:focus {
+    outline: none;  /* Removes focus outline (optional) */
+    
+}
+            .header-button {
+                font-family: 'Courier New', Courier, monospace;
+                text-align: center;
+                font-size: 50px;
+                color:green;
+                font-weight: bold;
+             
+            }
+            .image-button {
+                cursor: pointer;
+                border: none;
+                background: none;
+                padding: 0;
+            }
+    
+            body {
+                font-family: 'Courier New', Courier, monospace;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                background-color: black;
+                color: green;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+            }
+    
+           
+    
+            .nav-bar {
+                display: flex;
+                justify-content: center;
+                gap: 40px;
+                margin: 0px;
+                transition: opacity 1s ease-in-out;
+            }
+    
+            .nav-button {
+                background: black;
+                color: green;
+                text-decoration: none;
+                font-size: 10px;
+                cursor: pointer;
+                transition: 0.3s ease-in-out;
+                align-self: center;
+            }
+    
+            .nav-button:hover {
+                box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.7);
+            }
+    
+            .content-box {
+               place-self: center;
+                background: black;
+                color: green;
+                border: 1px solid green;
+                padding: 15px;
+                border-radius: 5px;
+                max-width: 300px;
+                max-height: 800px;
+                text-align: left;
+                
+            }
+                .content-box-2 {
+               place-self: center;
+                background: black;
+                color: green;
+                border: 1px solid green;
+                padding: 15px;
+                border-radius: 5px;
+                max-width: 400px;
+                max-height: 800px;
+                text-align: left;
+                
+            }
+    
+   
+          
+    
+            .guest-message {
+                font-size: 14px;
+                color: greenyellow;
+                white-space: normal;
+                min-height: 1.4em;
+            }
+    
+            .warning-message {
+                font-size: 10px;
+                color: greenyellow;
+                white-space: normal;
+                min-height: 1.4em;
+            }
+            
+                .gallery {
+
+               gap: 0px;
+                width: 50%;
+                height: auto;
+                align-self: center;
+               
+                
+            }
+    
+            footer {
+                font-size: 10px;
+                background: black;
+                color: green;
+                padding: 1em 0;
+                margin-top: auto;
+            }
+    
+            .spotify {
+               align-self: center
+                
+            }
+    
+            .padding {
+                padding: 10px;
+            }
+    
+    
+            window.onSpotifyIframeApiReady = (IFrameAPI) => {
+      //
+    };
+    
+    
+        </style>
+    

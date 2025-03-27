@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUGMAN ASSOCIATES</title>
+    <style>
+        #error {
+            display: none;
+            opacity: 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        #content-box, #nav-bar, #spotify {
+            display: block;
+        }
+        button, a {
+            text-decoration: none;  
+            color: inherit;  
+        }
+        a:visited {
+            color: inherit;
+        }
+        a:active, a:focus {
+            outline: none;
+        }
+        .header-button {
+            font-family: 'Courier New', Courier, monospace;
+            text-align: center;
+            font-size: 50px;
+            color: green;
+            font-weight: bold;
+        }
+        .image-button {
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: black;
+            color: green;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 0px;
+        }
+        .content-box {
+            place-self: center;
+            background: black;
+            color: green;
+            border: 1px solid green;
+            padding: 15px;
+            border-radius: 5px;
+            max-width: 300px;
+            max-height: 800px;
+            text-align: left;
+        }
+        .content-box-2 {
+            place-self: center;
+            background: black;
+            color: green;
+            border: 1px solid green;
+            padding: 15px;
+            border-radius: 5px;
+            max-width: 400px;
+            max-height: 800px;
+            text-align: left;
+        }
+        .guest-message {
+            font-size: 14px;
+            color: greenyellow;
+            white-space: normal;
+            min-height: 1.4em;
+        }
+        .warning-message {
+            font-size: 10px;
+            color: greenyellow;
+            white-space: normal;
+            min-height: 1.4em;
+        }
+        footer {
+            font-size: 10px;
+            background: black;
+            color: green;
+            padding: 1em 0;
+            margin-top: auto;
+        }
+        .padding {
+            padding: 10px;
+        }
+        #error {
+            width: 0;
+            border-right: 3px solid black;
+            animation: typing 1s steps(30) forwards;
+        }
+        @keyframes typing {
+            from {
+                width: 0;
+                border-right: 3px solid black;
+            }
+            to {
+                width: 100%;
+                border-right: 3px solid transparent;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header>
+        <a href="index.html" class="header">
+            <p class="header-button">K.A.</p>
+        </a>
+    </header>
+
+    <!-- Content Box for Login -->
+    <div class="content-box-2">
+        <nav id="nav-bar" class="nav-bar">
+            <div class="content-box-2">
+                <!-- Navigation Bar (Initially Hidden) -->
+                <nav class="nav-bar">
+                 
+                    <!--CANDLE GOBLIN BUTTON-->
+                    <a href= "project_black_hole.html" class="image-button">
+                        <button class="image-button">
+                            <img src="C:\Users\rossk\OneDrive\Documents\Kugman Associates Website\folderbutton.png" alt="XXX" width="auto" height="50" >
+                           <p class="warning-message">Candle Goblin</p>
+                        </button>   
+                    </a>
+                
+                <!--GADFLY BUTTON-->
+                    <a href= "project_mosquito.html" class="image-button">
+                    <button class="image-button">
+                        <img src="C:\Users\rossk\OneDrive\Documents\Kugman Associates Website\folderbutton.png" alt="XXX" width="auto" height="50" >
+                       <p class="warning-message">Gadfly</p>
+                    </button>   
+                    </a>
+                
+                 <!--ABOUT BUTTON-->
+                            <a href= "about.html" class="image-button">
+                                <button class="image-button">
+                                    <img src="C:\Users\rossk\OneDrive\Documents\Kugman Associates Website\folderbutton.png" alt="XXX" width="auto" height="50" >
+                                   <p class="warning-message">About</p>
+                                </button>   
+                                </a>
+                
+                <!--BLOG BUTTON-->
+                            <a href= "blog.html" class="image-button">
+                                <button class="image-button">
+                                    <img src="C:\Users\rossk\OneDrive\Documents\Kugman Associates Website\folderbutton.png" alt="XXX" width="auto" height="50" >
+                                   <p class="warning-message">Blog</p>
+                                </button>   
+                                </a>
+                
+                </nav>
+        </nav>
+
+        <div id="content-box">
+            <p class="guest-message"> If you are not <span style="color: red;">[Verified User]</span>, please do not try to enter a password. Please. I'm new here and I do not want to be blamed for something going wrong. The world is hard enough as it is. I have student loans and need healthcare. </p>
+            <p style="text-align: center; font-size: 20px; font-weight: bold;"> Thank you. </p>
+            <div style="align-self: center; color: greenyellow;">
+                <input type="text" placeholder="Enter Password..." style="align-self: center; text-align: center;">
+                <button onclick="toggleText()" style="background-color: black;">
+                    <p>Login ---></p>
+                </button>
+                <p id="Text" style="display: none;">
+                    <span style="color: red;"> I literally asked you not to enter a password if you aren't [Verified User].</span>
+                </p>
+                <p id="Text2" style="display: none;">
+                    <span style="color: red;">Do that one more time and see what happens.</span>
+                </p>
+            </div>
+        </div>
+
+        <p id="error" style="display: none;">
+            <span style="color: red;">You Have Been Logged Out By:</span> 
+            <span style="color: greenyellow;">(°ل͟°)╭∩╮</span>
+        </p>
+
+        <iframe id="spotify" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2NALEWd3ZYVubQLvXjZQey?utm_source=generator" width="400px" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kugman Associates</p>
+    </footer>
+
+    <script>
+        // Retrieve click count from localStorage, default to 0 if not found
+        let clickCount = parseInt(localStorage.getItem('clickCount')) || 0;
+
+        function toggleText() {
+            clickCount++;  // Increment the click count
+
+            // Store the updated click count in localStorage
+            localStorage.setItem('clickCount', clickCount);
+
+            if (clickCount === 1) {
+                document.getElementById('Text').style.display = "block";
+            } else if (clickCount === 2) {
+                document.getElementById('Text2').style.display = "block";
+            } else if (clickCount === 3) {
+                const errorElement = document.getElementById('error');
+                errorElement.style.display = "block";
+                errorElement.style.opacity = 1;
+
+                // Inject animation CSS dynamically
+                const style = document.createElement('style');
+                style.innerHTML = `
+                    @keyframes typing {
+                        from {
+                            width: 0;
+                            border-right: 3px solid black;
+                        }
+                        to {
+                            width: 100%;
+                            border-right: 3px solid transparent;
+                        }
+                    }
+                    #error {
+                        width: 0;
+                        border-right: 3px solid black;
+                        animation: typing 1s steps(30) forwards;
+                    }
+                `;
+                document.head.appendChild(style);
+
+                // Hide other elements
+                document.getElementById('content-box').style.display = "none"; 
+                document.getElementById('nav-bar').style.display = "none";
+                document.getElementById('spotify').style.display = "none";
+            }
+        }
+
+        // If the page is reloaded and clickCount has reached 3, hide elements and show error message
+        if (clickCount === 3) {
+            const errorElement = document.getElementById('error');
+            errorElement.style.display = "block";
+            errorElement.style.opacity = 1;
+            errorElement.style.animation = "typing 1s steps(30) forwards";
+            document.getElementById('content-box').style.display = "none"; 
+            document.getElementById('nav-bar').style.display = "none";
+            document.getElementById('spotify').style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
