@@ -4,36 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kugman Associates</title>
-    <style>
-        /* Remove scrolling from the whole webpage */
-        html, body {
+     <style>
+        body {
             margin: 0;
             padding: 0;
-            overflow: hidden; /* Prevents scrolling */
-            width: 100vw;
-            height: 100vh;
+            height: 200vh; /* Just to enable scrolling */
+            overflow: auto; /* Allows scrolling */
         }
 
-        /* Ensure iframe takes full space without scrolling */
-        .iframe-container {
-            width: 100vw;
-            height: 800px; /* Adjust as needed */
-            border: none;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            overflow: hidden; /* Prevents internal scrolling */
-            scrollbar-width: none; /* For Firefox */
-        }
-
-        /* Hide scrollbar in WebKit browsers */
-        iframe::-webkit-scrollbar {
+        /* Hide scrollbar for Chrome, Safari, and newer Edge */
+        body::-webkit-scrollbar {
             display: none;
         }
 
+        /* Hide scrollbar for Firefox */
+        body {
+            scrollbar-width: none;
+        }
         /* Spotify Embed Centering */
         .spotify-container {
             display: flex;
