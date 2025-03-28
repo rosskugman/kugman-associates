@@ -5,14 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kugman Associates</title>
      <style>
-         /* Remove scrolling from the whole webpage */
+          /* Remove scrolling from the whole webpage */
         html, body {
             margin: 0;
             padding: 0;
+            overflow: hidden; /* Prevents scrolling */
             width: 100vw;
             height: 100vh;
         }
-                iframe {
+
+        /* Ensure iframe takes full space without scrolling */
+        .iframe-container {
+            width: 100vw;
+            height: 800px; /* Adjust as needed */
+            border: none;
+        }
+
+        iframe {
             width: 100%;
             height: 100%;
             border: none;
@@ -24,6 +33,8 @@
         iframe::-webkit-scrollbar {
             display: none;
         }
+
+        /* Spotify Embed Centering */
         .spotify-container {
             display: flex;
             justify-content: center; /* Centers horizontally */
