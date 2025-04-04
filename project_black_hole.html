@@ -26,37 +26,36 @@
 <nav class="nav-bar">
  
     <!--CANDLE GOBLIN BUTTON-->
-    <a href= "project_black_hole.html" class="image-button">
-        <button class="image-button">
+    <a href= "project_black_hole.html" class="image-button-1">
+        <button class="image-button-1">
             <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="XXX" width="auto" height="50" >
            <p class="warning-message">Candle Goblin</p>
         </button>   
     </a>
 
 <!--GADFLY BUTTON-->
-    <a href= "project_mosquito.html" class="image-button">
-    <button class="image-button">
+    <a href= "project_mosquito.html" class="image-button-1">
+    <button class="image-button-1">
         <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="XXX" width="auto" height="50" >
        <p class="warning-message">Gadfly</p>
     </button>   
     </a>
 
  <!--ABOUT BUTTON-->
-            <a href= "about.html" class="image-button">
-                <button class="image-button">
+            <a href= "about.html" class="image-button-1">
+                <button class="image-button-1">
                     <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="XXX" width="auto" height="50" >
                    <p class="warning-message">About</p>
                 </button>   
                 </a>
 
-<!--BLOG BUTTON-->
-            <a href= "blog.html" class="image-button">
-                <button class="image-button">
-                    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="XXX" width="auto" height="50" >
-                   <p class="warning-message">Blog</p>
+<!--PRIVATE BUTTON-->
+            <a href= "private.html" class="image-button-1">
+                <button class="image-button-1">
+                    <img src="folderbutton.png" alt="XXX" width="auto" height="50" >
+                   <p class="warning-message">Private</p>
                 </button>   
                 </a>
-
 </nav>
 
 <!--BODY INSIDE-->
@@ -67,19 +66,33 @@
     </div>
 <div class="gallery">
         <!--DEMON BUTTON-->
-     <a href= "https://en.wikipedia.org/wiki/Demon">
-    <button class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/snake.png" class="gallery">
-    </button>
-     </a>
+  
+     
+    
+    <a href= "https://en.wikipedia.org/wiki/Demon" class="image-button-2">
+    <img src="https://rosskugman.github.io/kugman-associates/snake.png">
+    </a>
+    
+   
+   
      <!--BLADE BUTTON-->
-      <a href= "https://en.wikipedia.org/wiki/Blade">
-    <button class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/triangle.png" class="gallery" >
-    </button>
+    
+    <a href= "https://en.wikipedia.org/wiki/Blade" class="image-button-2">
+    <img src="https://rosskugman.github.io/kugman-associates/triangle.png">
       </a>
-    <img src="https://rosskugman.github.io/kugman-associates/mirror.png" class="gallery">
-    <img src="https://rosskugman.github.io/kugman-associates/pillar.png" class="gallery">
+
+       <!--MIRROR BUTTON-->
+    
+    <a href= "https://en.wikipedia.org/wiki/Mirror" class="image-button-2">
+        <img src="https://rosskugman.github.io/kugman-associates/mirror.png">
+          </a>
+
+           <!--PILLAR BUTTON-->
+    
+    <a href= "https://en.wikipedia.org/wiki/Rolling_pin" class="image-button-2">
+        <img src="https://rosskugman.github.io/kugman-associates/pillar.png">
+          </a>
+
 </div>
 <div>
     <p class="guest-message" style="text-align: center; font-size: 10px; color: green;"> Mr. Kugman has discovered a trove of information regarding a story during 2009 A.D. set in the U.S. suburban midwest. Please read below to become familiar with the material before reading or viewing. </p>
@@ -152,7 +165,7 @@ a:active, a:focus {
                 font-weight: bold;
              
             }
-            .image-button {
+            .image-button-1 {
                 cursor: pointer;
                 border: none;
                 background: none;
@@ -244,8 +257,27 @@ a:active, a:focus {
                 height: auto;
                 display: flex;
                 max-width: 400px;
+                margin-left: 32px;
+                margin-right: 30px;
+                }
+
+                .image-button-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    background: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image-button-2 img {
+    width: 50px; /* Adjust as needed */
+    height: auto;
+}
                 
-            }
+            
     
             footer {
                 font-size: 10px;
