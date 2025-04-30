@@ -6,6 +6,20 @@
     <title>Kugman Associates</title>
      <style>
 
+         .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.responsive-image {
+  max-width: 200px; /* or whatever "small" means to you */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
          .gallery {
 
                 width: 20%;
@@ -95,8 +109,8 @@
                     loading="lazy">
                 </iframe>
             </div>
-            <div><p class="gallery">
-    <img  src= "thisiswhereyouwork.png">
+            <div><p class="image-wrapper">
+    <img  src= "thisiswhereyouwork.png" class="responsive-image" >
             </p></div>
         </div>
     </footer>
