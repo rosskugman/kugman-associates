@@ -4,98 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KUGMAN ASSOCIATES</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
-<!--BODY OF WEBSITE-->
 <body>
 
-    <!--HEADER-->
-    <header>
-        <a href="home.html" class="header">
-            <p><img src="https://rosskugman.github.io/kugman-associates/KALogoY2K.png" alt="XXX" width="auto" height="200"></p>
-        </a>
-    </header>
+<header>
+    <a href="home.html" class="header">
+        <p><img src="https://rosskugman.github.io/kugman-associates/KALogoY2K.png" alt="XXX" width="auto" height="200"></p>
+    </a>
+</header>
 
 <div class="content-box-2">
-<!-- Navigation Bar (Initially Hidden) -->
+
 <nav class="nav-bar">
 
-    <!--VFX BUTTON-->
     <a href="vfx.html" class="image-button">
         <button class="image-button">
-            <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX" width="auto" height="50">
+            <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX" height="50">
             <p class="warning-message">VFX</p>
         </button>
     </a>
 
-    <!--POST BUTTON-->
     <a href="post.html" class="image-button">
         <button class="image-button">
-            <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST" width="auto" height="50">
+            <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST" height="50">
             <p class="warning-message">POST</p>
         </button>
     </a>
 
-    <!--NEWS BUTTON-->
     <a href="news.html" class="image-button">
         <button class="image-button">
-            <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS" width="auto" height="50">
+            <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS" height="50">
             <p class="warning-message">NEWS</p>
         </button>
     </a>
 
-    <!--ABOUT BUTTON-->
     <a href="about.html" class="image-button">
         <button class="image-button">
-            <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT" width="auto" height="50">
+            <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT" height="50">
             <p class="warning-message">ABOUT</p>
         </button>
     </a>
 
-    <!--CONTACT BUTTON-->
     <a href="contact.html" class="image-button">
         <button class="image-button">
-            <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT" width="auto" height="50">
+            <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT" height="50">
             <p class="warning-message">CONTACT</p>
         </button>
     </a>
 
 </nav>
 
-    <!-- SCRIPTED INTRO -->
-    <div class="content-box">
-        <div class="login-text">
-            <p>&gt;a/EMPLOYEE-RED: Login successful</p>
-            <p>&gt;system/command: retrieve ******** file</p>
-            <p>&gt;status/processing...</p>
-            <p>&gt;response/approved</p>
-            <p>&gt;output: ******** file retrieved successfully</p>
-            <p>&gt;output: displaying ******** FILE</p>
-        </div>
-
-        <div class="guest-messages">
-            <p class="guest-message">Welcome, <span class="verified">[Verified User]</span></p>
-            <p class="guest-message">>>></p>
-            <p class="guest-message">
-                You are granted access to folders 
-                <a href="vfx.html" class="folder-link">[VFX]</a>, 
-                <a href="post.html" class="folder-link">[POST]</a>, 
-                <a href="news.html" class="folder-link">[NEWS]</a>, 
-                <a href="about.html" class="folder-link">[ABOUT]</a>, and 
-                <a href="contact.html" class="folder-link">[CONTACT]</a>.
-            </p>
-            <p class="guest-message">>>></p>
-            <p class="guest-message">Mr. Kugman has provided music below to enjoy while browsing.</p>
-        </div>
+<div class="content-box">
+    <div class="login-text">
+        <p>&gt;a/EMPLOYEE-RED: Login successful</p>
+        <p>&gt;system/command: retrieve ******** file</p>
+        <p>&gt;status/processing...</p>
+        <p>&gt;response/approved</p>
+        <p>&gt;output: ******** file retrieved successfully</p>
+        <p>&gt;output: displaying ******** FILE</p>
     </div>
 
-    <div class="padding"></div>
+    <div class="guest-messages">
+        <p class="guest-message">Welcome, <span class="verified">[Verified User]</span></p>
+        <p class="guest-message">>>></p>
+        <p class="guest-message">
+            You are granted access to folders 
+            <a href="vfx.html" class="folder-link">[VFX]</a>, 
+            <a href="post.html" class="folder-link">[POST]</a>, 
+            <a href="news.html" class="folder-link">[NEWS]</a>, 
+            <a href="about.html" class="folder-link">[ABOUT]</a>, and 
+            <a href="contact.html" class="folder-link">[CONTACT]</a>.
+        </p>
+        <p class="guest-message">>>></p>
+        <p class="guest-message">Mr. Kugman has provided music below to enjoy while browsing.</p>
+    </div>
+</div>
+
+<div class="padding"></div>
 
 </div>
 
-<!--SCRIPT-->
-<script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
 
+<script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
     const loginText = document.querySelector(".login-text");
@@ -104,7 +98,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const navBar = document.querySelector(".nav-bar"); 
     let delay = 200;
 
-    // Typing effect for login text
     paragraphs.forEach((p, index) => {
         setTimeout(() => {
             p.style.opacity = "1";
@@ -112,12 +105,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }, delay * index);
     });
 
-    // Remove login text after 2 seconds
     setTimeout(() => {
         loginText.innerHTML = "";
     }, 1700);
 
-    // Typing effect for guest messages after login text
     setTimeout(() => {
         guestMessages.forEach((msg, index) => {
             setTimeout(() => {
@@ -137,15 +128,17 @@ window.onSpotifyIframeApiReady = (IFrameAPI) => {
 };
 </script>
 
-<!--STYLE CSS-->
+
 <style>
 button, a {
     text-decoration: none;
     color: inherit;
 }
+
 a:visited {
     color: inherit;
 }
+
 a:active, a:focus {
     outline: none;
 }
@@ -158,7 +151,7 @@ a:active, a:focus {
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Space Mono', monospace;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -169,8 +162,15 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
 .header-button {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
     font-size: 50px;
     color: green;
@@ -256,12 +256,13 @@ body {
 }
 
 .verified {
-    color: #00bfff; /* Light Blue */
+    color: #00bfff;
 }
 
 .folder-link {
-    color: #00ff7f; /* Light Green */
+    color: #00ff7f;
 }
+
 .folder-link:hover {
     text-decoration: underline;
     color: #00ffb0;
