@@ -15,7 +15,10 @@
     }
 
     html,body{
-      margin:0;padding:0;background:#000;color:var(--text);
+      margin:0;
+      padding:0;
+      background:#000;
+      color:var(--text);
       font-family:'Space Mono', monospace;
     }
     body{text-align:center;overflow-x:hidden;}
@@ -31,17 +34,40 @@
     /* Header */
     .header img{height:200px;}
 
-    /* Nav (folder buttons) */
+    /* Nav Layout (two rows) */
     .nav-bar{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:10px;
+      margin:10px 0 20px 0;
+    }
+
+    .nav-row{
       display:flex;
       justify-content:center;
       gap:40px;
-      margin:10px 0 20px 0;
     }
+
     a{text-decoration:none;color:inherit;}
 
-    .image-button img{height:50px;width:auto;}
-    .warning-message{font-size:10px;margin:0;}
+    .folder-icon{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+    }
+
+    .folder-icon img{
+      height:50px;
+      width:auto;
+    }
+
+    .warning-message{
+      font-size:10px;
+      margin:4px 0 0;
+      text-align:center;
+    }
 
     /* Content */
     .content-box{
@@ -74,26 +100,46 @@
 
 <header>
   <a href="index.html" class="header">
-    <img src="https://rosskugman.github.io/kugman-associates/KALogoY2K.png">
+    <img src="https://rosskugman.github.io/kugman-associates/KALogoY2K.png" alt="KUGMAN ASSOCIATES LOGO">
   </a>
 </header>
 
 <nav class="nav-bar">
-  <a href="vfx.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png"><p class="warning-message">VFX</p>
-  </a>
-  <a href="post.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png"><p class="warning-message">POST</p>
-  </a>
-  <a href="news.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png"><p class="warning-message">NEWS</p>
-  </a>
-  <a href="about.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png"><p class="warning-message">ABOUT</p>
-  </a>
-  <a href="contact.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png"><p class="warning-message">CONTACT</p>
-  </a>
+  <div class="nav-row">
+    <a href="vfx.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX">
+        <p class="warning-message">VFX</p>
+      </div>
+    </a>
+    <a href="post.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST">
+        <p class="warning-message">POST</p>
+      </div>
+    </a>
+    <a href="news.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS">
+        <p class="warning-message">NEWS</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="nav-row">
+    <a href="about.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT">
+        <p class="warning-message">ABOUT</p>
+      </div>
+    </a>
+    <a href="contact.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT">
+        <p class="warning-message">CONTACT</p>
+      </div>
+    </a>
+  </div>
 </nav>
 
 <div class="content-box">
@@ -106,8 +152,8 @@
     <source src="vfx1.mov" type="video/mp4">
   </video>
 
-  <h1>MOVIE MAGIC ISN'T A ONE WAY STREET</h1>
-  <p>We aim to please with customer-serving deadlines, consistent communication, and above all amazing end products. You will be advised every step of the way.</p>
+  <h1>MOVIE MAGIC IS NOT A ONE WAY STREET</h1>
+  <p>We aim to please with customer serving deadlines, consistent communication, and above all amazing end products. You will be advised every step of the way.</p>
 
 </div>
 
@@ -115,4 +161,3 @@
 
 </body>
 </html>
-
