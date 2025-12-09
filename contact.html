@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ABOUT | KUGMAN ASSOCIATES</title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --text: #ADFF2F;
+      --border: green;
+    }
+
+    html,body{
+      margin:0;
+      padding:0;
+      background:#000;
+      color:var(--text);
+      font-family:'Space Mono', monospace;
+    }
+    body{
+      text-align:center;
+      overflow-x:hidden;
+    }
+
+    /* Headings */
+    h1{
+      font-family:'Orbitron', sans-serif;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      margin: 20px 0;
+    }
+
+       h2{
+      font-family:'Orbitron', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      margin: 20px 0;
+      color: white;
+    }
+
+    /* Header */
+    .header img{
+      height:200px;
+    }
+
+    /* Nav */
+    .nav-bar{
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      margin:10px 0 20px 0;
+    }
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+    .image-button img{
+      height:50px;
+      width:auto;
+    }
+    .warning-message{
+      font-size:10px;
+      margin:0;
+    }
+
+    /* Content */
+    .content-box{
+      background:#000;
+      border:1px solid var(--border);
+      padding:20px;
+      border-radius:5px;
+      max-width:700px;
+      margin:20px auto 40px auto;
+      text-align:left;
+    }
+
+    .content-layout{
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+      align-items:center;
+    }
+
+    @media (min-width: 768px){
+      .content-layout{
+        flex-direction:row;
+        align-items:flex-start;
+      }
+      .text-container{
+        flex:1;
+        text-align:left;
+      }
+    }
+
+    .video-container video{
+      width:100%;
+      max-width:400px; /* keeps it vertical and not too wide */
+      aspect-ratio:9/16;
+      object-fit:cover;
+      border:1px solid var(--border);
+      border-radius:5px;
+      display:block;
+      margin:0 auto;
+    }
+
+    .text-container p{
+      margin-top:0;
+      line-height:1.5;
+    }
+
+    footer{
+      font-size:10px;
+      margin-top:40px;
+      padding-bottom:20px;
+      text-align:center;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="header">
+    <img src="https://rosskugman.github.io/kugman-associates/KALogoY2K.png" alt="KUGMAN ASSOCIATES LOGO">
+  </a>
+</header>
+
+<nav class="nav-bar">
+  <a href="vfx.html" class="image-button">
+    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX"><p class="warning-message">VFX</p>
+  </a>
+  <a href="post.html" class="image-button">
+    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST"><p class="warning-message">POST</p>
+  </a>
+  <a href="news.html" class="image-button">
+    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS"><p class="warning-message">NEWS</p>
+  </a>
+  <a href="about.html" class="image-button">
+    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT"><p class="warning-message">ABOUT</p>
+  </a>
+  <a href="contact.html" class="image-button">
+    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT"><p class="warning-message">CONTACT</p>
+  </a>
+</nav>
+
+<div class="content-box">
+
+  <h1>CONTACT</h1>
+  <h2>ross@kugmanassociates.com</h1>
+    <p>8473701191</p>
+
+
+
+
+</div>
+
+<footer><p>&copy; 2025 KUGMAN ASSOCIATES. All rights reserved.</p></footer>
+
+</body>
+</html>
