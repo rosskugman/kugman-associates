@@ -1,254 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KUGMAN ASSOCIATES</title>
-    
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ABOUT | KUGMAN ASSOCIATES</title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --text: #ADFF2F;
+      --border: green;
+    }
+
+    html,body{
+      margin:0;
+      padding:0;
+      background:#000;
+      color:var(--text);
+      font-family:'Space Mono', monospace;
+    }
+    body{
+      text-align:center;
+      overflow-x:hidden;
+    }
+
+    /* Headings */
+    h1{
+      font-family:'Orbitron', sans-serif;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      margin: 20px 0;
+    }
+
+    /* Header */
+    .header img{
+      height:200px;
+    }
+
+    /* Nav */
+    .nav-bar{
+      display:flex;
+      justify-content:center;
+      gap:40px;
+      margin:10px 0 20px 0;
+    }
+    a{
+      text-decoration:none;
+      color:inherit;
+    }
+    .image-button img{
+      height:50px;
+      width:auto;
+    }
+    .warning-message{
+      font-size:10px;
+      margin:0;
+    }
+
+    /* Content */
+    .content-box{
+      background:#000;
+      border:1px solid var(--border);
+      padding:20px;
+      border-radius:5px;
+      max-width:700px;
+      margin:20px auto 40px auto;
+      text-align:left;
+    }
+
+    .content-layout{
+      display:flex;
+      flex-direction:column;
+      gap:20px;
+      align-items:center;
+    }
+
+    @media (min-width: 768px){
+      .content-layout{
+        flex-direction:row;
+        align-items:flex-start;
+      }
+      .text-container{
+        flex:1;
+        text-align:left;
+      }
+    }
+
+    .video-container video{
+      width:100%;
+      max-width:400px; /* keeps it vertical and not too wide */
+      aspect-ratio:9/16;
+      object-fit:cover;
+      border:1px solid var(--border);
+      border-radius:5px;
+      display:block;
+      margin:0 auto;
+    }
+
+    .text-container p{
+      margin-top:0;
+      line-height:1.5;
+    }
+
+    footer{
+      font-size:10px;
+      margin-top:40px;
+      padding-bottom:20px;
+      text-align:center;
+    }
+
+  </style>
 </head>
-
-
-
-<!--BODY OF WEBSITE-->
 
 <body>
 
-    <!--HEADER-->
-  <header>
-        <a href= "home.html" class="header">
-            <p> <img src="https://rosskugman.github.io/kugman-associates/KALogoY2K.png" alt="XXX" width="auto" height="200"> </p>
-        </a>
-    </header>
+<header>
+  <a href="home.html" class="header">
+    <img src="https://rosskugman.github.io/kugman-associates/KALogoY2K.png" alt="KUGMAN ASSOCIATES LOGO">
+  </a>
+</header>
 
-<div class="content-box-2">
-<!-- Navigation Bar (Initially Hidden) -->
 <nav class="nav-bar">
- 
-    <!--CANDLE GOBLIN BUTTON-->
-    <a href= "project_black_hole.html" class="image-button">
-        <button class="image-button">
-            <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="XXX" width="auto" height="50" >
-           <p class="warning-message">The Candle Goblin</p>
-        </button>   
-    </a>
-
-<!--GADFLY BUTTON-->
-    <a href= "project_mosquito.html" class="image-button">
-    <button class="image-button">
-        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="XXX" width="auto" height="50" >
-       <p class="warning-message">The Gadfly</p>
-    </button>   
-    </a>
-
- <!--ABOUT BUTTON-->
-            <a href= "about.html" class="image-button">
-                <button class="image-button">
-                    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="XXX" width="auto" height="50" >
-                   <p class="warning-message">About</p>
-                </button>   
-                </a>
-
-<!--PRIVATE BUTTON-->
-            <a href= "private.html" class="image-button">
-                <button class="image-button">
-                    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="XXX" width="auto" height="50" >
-                   <p class="warning-message">Private</p>
-                </button>   
-                </a>
-
+  <a href="vfx.html" class="image-button">
+    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX"><p class="warning-message">VFX</p>
+  </a>
+  <a href="post.html" class="image-button">
+    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST"><p class="warning-message">POST</p>
+  </a>
+  <a href="news.html" class="image-button">
+    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS"><p class="warning-message">NEWS</p>
+  </a>
+  <a href="about.html" class="image-button">
+    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT"><p class="warning-message">ABOUT</p>
+  </a>
+  <a href="contact.html" class="image-button">
+    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT"><p class="warning-message">CONTACT</p>
+  </a>
 </nav>
 
-<!--BODY INSIDE-->
-
 <div class="content-box">
-    <div>
-        <p class="guest-message"  style="text-align: center; font-size: 20px; font-weight: bold;"> ROSS KUGMAN </p>
+
+  <h1>ABOUT</h1>
+  <h1>Kugman Associates was born out of NECESSITY</h1>
+
+  <div class="content-layout">
+
+    <!-- VIDEO LEFT -->
+    <div class="video-container">
+      <video autoplay muted loop playsinline>
+        <source src="rossabout.mov" type="video/mp4">
+      </video>
     </div>
-<div class="gallery" style="text-align: center;">
-    <img  src= "ross-kugman-pic-everything-is-okay.png" style= "width: 120%; height: auto; content: center; padding: 30px; img-align: center; margin-left: 30px;">
-</div>
-<div>
-    <p class="guest-message" style= "text-align: center;:" > <a href="https://www.instagram.com/rosskugman/" target="_blank" rel="noopener noreferrer">This is Mr. Kugman.</a> </p>
-</div>
-<div>
-    <p class="guest-message" style="text-align: center;"> A Director. A Writer. A <span style="color: red;">[Redacted]</span>. </p>
-</div>
-</div>
- 
 
-    
-    <div class="padding"></div>
+    <!-- TEXT RIGHT -->
+    <div class="text-container">
+         <p>Hello and thank you for looking through our website! We know it's the 21st century and very few people ever go to a website anymore so thank you for taking the time.</p>
+      <p>As our roster of clients grew, so too have the scale of our projects.</p>
+      <p>We work with independent companies using the best tools necessary to make cutting edge graphics at a fraction of the cost. While we're a small VFX/post house for now, we have ambitions to take on even greater challenges as they come to us.</p>
 
+      <h2>Ross Kugman</h2>
+      <p>Owner</p>
+    </div>
 
-   
-    
+  </div>
+
 </div>
 
+<footer><p>&copy; 2025 KUGMAN ASSOCIATES. All rights reserved.</p></footer>
 
-    <script src="https://open.spotify.com/embed/iframe-api/v1" async></script>
-
-    <script>
-    
-
-        window.onSpotifyIframeApiReady = (IFrameAPI) => {
-  const element = document.getElementById('embed-iframe');
-  const options = {
-      uri: 'spotify:episode:7makk4oTQel546B0PZlDM5'
-    };
-  const callback = (EmbedController) => {};
-  IFrameAPI.createController(element, options, callback);
-};
-</div>
-
-
-    </script>
-
-
-    
 </body>
-
-
-
-
-<style>
-    button, a {
-    text-decoration: none;  /* Removes underline */
-    color: inherit;  /* Keeps the original text color */
-}
-a:visited {
-    color: inherit;  /* Prevents the purple "visited" link effect */
-}
-
-a:active, a:focus {
-    outline: none;  /* Removes focus outline (optional) */
-    
-}
-            .header-button {
-                font-family: 'Courier New', Courier, monospace;
-                text-align: center;
-                font-size: 50px;
-                color:green;
-                font-weight: bold;
-             
-            }
-            .image-button {
-                cursor: pointer;
-                border: none;
-                background: none;
-                padding: 0;
-            }
-    
-            body {
-                font-family: 'Courier New', Courier, monospace;
-                margin: 0;
-                padding: 0;
-                text-align: center;
-                background-color: black;
-                color: green;
-                display: flex;
-                flex-direction: column;
-                min-height: 100vh;
-            }
-    
-           
-    
-            .nav-bar {
-                display: flex;
-                justify-content: center;
-                gap: 40px;
-                margin: 0px;
-                transition: opacity 1s ease-in-out;
-            }
-    
-            .nav-button {
-                background: black;
-                color: green;
-                text-decoration: none;
-                font-size: 10px;
-                cursor: pointer;
-                transition: 0.3s ease-in-out;
-                align-self: center;
-            }
-    
-            .nav-button:hover {
-                box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.7);
-            }
-    
-            .content-box {
-               place-self: center;
-                background: black;
-                color: green;
-                border: 1px solid green;
-                padding: 15px;
-                border-radius: 5px;
-                max-width: 300px;
-                max-height: 800px;
-                text-align: left;
-                
-            }
-                .content-box-2 {
-               place-self: center;
-                background: black;
-                color: green;
-                border: 1px solid green;
-                padding: 15px;
-                border-radius: 5px;
-                max-width: 400px;
-                max-height: 800px;
-                text-align: left;
-                
-            }
-    
-   
-          
-    
-            .guest-message {
-                font-size: 14px;
-                color: greenyellow;
-                white-space: normal;
-                min-height: 1.4em;
-            }
-    
-            .warning-message {
-                font-size: 10px;
-                color: greenyellow;
-                white-space: normal;
-                min-height: 1.4em;
-            }
-            
-                .gallery {
-
-               gap: 0px;
-                width: 50%;
-                height: auto;
-                align-self: center;
-               
-                
-            }
-    
-            footer {
-                font-size: 10px;
-                background: black;
-                color: green;
-                padding: 1em 0;
-                margin-top: auto;
-            }
-    
-            .spotify {
-               align-self: center
-                
-            }
-    
-            .padding {
-                padding: 10px;
-            }
-    
-    
-            window.onSpotifyIframeApiReady = (IFrameAPI) => {
-      //
-    };
-    
-    
-        </style>
-    
+</html>
