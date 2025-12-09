@@ -34,7 +34,7 @@
       margin: 20px 0;
     }
 
-       h2{
+    h2{
       font-family:'Orbitron', sans-serif;
       font-size: 1rem;
       letter-spacing: 2px;
@@ -50,23 +50,33 @@
     /* Nav */
     .nav-bar{
       display:flex;
-      justify-content:center;
-      gap:40px;
+      flex-direction:column;
+      align-items:center;
+      gap:10px;
       margin:10px 0 20px 0;
     }
+
+    .nav-row{
+      display:flex;
+      justify-content:center;
+      gap:40px;
+    }
+
     a{
       text-decoration:none;
       color:inherit;
     }
+
     .image-button img{
       height:50px;
       width:auto;
     }
+
     .warning-message{
       font-size:10px;
       margin:0;
+      text-align:center;
     }
-
 
     /* Content */
     .content-box{
@@ -126,44 +136,43 @@
 <body>
 
 <header>
-  <a href="index.html" class="header">
+  <a href="home.html" class="header">
     <img src="https://rosskugman.github.io/kugman-associates/KALogoY2K.png" alt="KUGMAN ASSOCIATES LOGO">
   </a>
 </header>
 
 <nav class="nav-bar">
-  <div class="nav-col">
+  <div class="nav-row">
     <a href="vfx.html" class="image-button">
-      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX"><p class="warning-message">VFX</p>
+      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX">
+      <p class="warning-message">VFX</p>
     </a>
     <a href="post.html" class="image-button">
-      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST"><p class="warning-message">POST</p>
+      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST">
+      <p class="warning-message">POST</p>
     </a>
     <a href="news.html" class="image-button">
-      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS"><p class="warning-message">NEWS</p>
+      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS">
+      <p class="warning-message">NEWS</p>
     </a>
   </div>
 
-  <div class="nav-col">
+  <div class="nav-row">
     <a href="about.html" class="image-button">
-      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT"><p class="warning-message">ABOUT</p>
+      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT">
+      <p class="warning-message">ABOUT</p>
     </a>
     <a href="contact.html" class="image-button">
-      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT"><p class="warning-message">CONTACT</p>
+      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT">
+      <p class="warning-message">CONTACT</p>
     </a>
   </div>
 </nav>
 
-
 <div class="content-box">
-
   <h1>CONTACT</h1>
-  <h2>ross@kugmanassociates.com</h1>
-    <p>8473701191</p>
-
-
-
-
+  <h2>ross@kugmanassociates.com</h2>
+  <p>8473701191</p>
 </div>
 
 <footer><p>&copy; 2025 KUGMAN ASSOCIATES. All rights reserved.</p></footer>
