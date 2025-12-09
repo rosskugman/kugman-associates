@@ -22,27 +22,37 @@
 <nav class="nav-bar">
   <div class="nav-row">
     <a href="vfx.html" class="image-button">
-      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX">
-      <p class="warning-message">VFX</p>
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX">
+        <p class="warning-message">VFX</p>
+      </div>
     </a>
     <a href="post.html" class="image-button">
-      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST">
-      <p class="warning-message">POST</p>
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST">
+        <p class="warning-message">POST</p>
+      </div>
     </a>
     <a href="news.html" class="image-button">
-      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS">
-      <p class="warning-message">NEWS</p>
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS">
+        <p class="warning-message">NEWS</p>
+      </div>
     </a>
   </div>
 
   <div class="nav-row">
     <a href="about.html" class="image-button">
-      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT">
-      <p class="warning-message">ABOUT</p>
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT">
+        <p class="warning-message">ABOUT</p>
+      </div>
     </a>
     <a href="contact.html" class="image-button">
-      <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT">
-      <p class="warning-message">CONTACT</p>
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT">
+        <p class="warning-message">CONTACT</p>
+      </div>
     </a>
   </div>
 </nav>
@@ -125,14 +135,6 @@ button, a {
     color: inherit;
 }
 
-a:visited {
-    color: inherit;
-}
-
-a:active, a:focus {
-    outline: none;
-}
-
 .image-button {
     cursor: pointer;
     border: none;
@@ -152,30 +154,15 @@ body {
     min-height: 100vh;
 }
 
-h1 {
-    font-family: 'Orbitron', sans-serif;
-    font-size: 2.2rem;
-    letter-spacing: 2px;
-    margin: 20px 0;
-}
-
-.header-button {
-    font-family: 'Orbitron', sans-serif;
-    text-align: center;
-    font-size: 50px;
-    color: green;
-    font-weight: bold;
-}
-
-/* updated nav layout */
+/* NAVIGATION FIXED + CLEAN */
 .nav-bar {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    margin: 0px;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    margin: 0;
 }
 
 .nav-row {
@@ -184,20 +171,25 @@ h1 {
     gap: 40px;
 }
 
-.nav-button {
-    background: black;
-    color: green;
-    text-decoration: none;
+.folder-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.folder-icon img {
+    height: 50px;
+    width: auto;
+}
+
+.warning-message {
+    text-align: center;
     font-size: 10px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    align-self: center;
+    margin: 3px 0 0;
+    color: greenyellow;
 }
 
-.nav-button:hover {
-    box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.7);
-}
-
+/* LOGIN BOX + REST (UNCHANGED) */
 .content-box {
     place-self: center;
     background: black;
@@ -206,7 +198,6 @@ h1 {
     padding: 15px;
     border-radius: 5px;
     max-width: 300px;
-    max-height: 800px;
     text-align: left;
     overflow: hidden;
 }
@@ -219,7 +210,6 @@ h1 {
     padding: 15px;
     border-radius: 5px;
     max-width: 400px;
-    max-height: 800px;
     text-align: left;
     overflow: hidden;
 }
@@ -230,7 +220,6 @@ h1 {
 }
 
 .login-text p, .guest-message {
-    font-size: 9px;
     opacity: 0;
     display: block;
     overflow: hidden;
@@ -243,14 +232,6 @@ h1 {
     font-size: 12px;
     color: greenyellow;
     white-space: normal;
-    min-height: 1.4em;
-}
-
-.warning-message {
-    font-size: 10px;
-    color: greenyellow;
-    white-space: normal;
-    min-height: 1.4em;
 }
 
 .verified {
@@ -258,4 +239,22 @@ h1 {
 }
 
 .folder-link {
-    colo
+    color: #00ff7f;
+}
+
+.folder-link:hover {
+    text-decoration: underline;
+    color: #00ffb0;
+}
+
+footer {
+    font-size: 10px;
+    margin-top: auto;
+    padding: 1em 0;
+}
+
+.padding { padding: 10px; }
+</style>
+
+</body>
+</html>
