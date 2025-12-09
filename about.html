@@ -34,29 +34,54 @@
       margin: 20px 0;
     }
 
+    h2{
+      font-family:'Orbitron', sans-serif;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      margin: 20px 0;
+    }
+
     /* Header */
     .header img{
       height:200px;
     }
 
-    /* Nav */
-    .nav-bar{
-      display:flex;
-      justify-content:center;
-      gap:40px;
-      margin:10px 0 20px 0;
-    }
     a{
       text-decoration:none;
       color:inherit;
     }
-    .image-button img{
+
+    /* Nav (two row layout) */
+    .nav-bar{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:10px;
+      margin:10px 0 20px 0;
+    }
+
+    .nav-row{
+      display:flex;
+      justify-content:center;
+      gap:40px;
+    }
+
+    .folder-icon{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+    }
+
+    .folder-icon img{
       height:50px;
       width:auto;
     }
+
     .warning-message{
       font-size:10px;
-      margin:0;
+      margin:4px 0 0;
+      text-align:center;
     }
 
     /* Content */
@@ -123,21 +148,41 @@
 </header>
 
 <nav class="nav-bar">
-  <a href="vfx.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX"><p class="warning-message">VFX</p>
-  </a>
-  <a href="post.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST"><p class="warning-message">POST</p>
-  </a>
-  <a href="news.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS"><p class="warning-message">NEWS</p>
-  </a>
-  <a href="about.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT"><p class="warning-message">ABOUT</p>
-  </a>
-  <a href="contact.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT"><p class="warning-message">CONTACT</p>
-  </a>
+  <div class="nav-row">
+    <a href="vfx.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX">
+        <p class="warning-message">VFX</p>
+      </div>
+    </a>
+    <a href="post.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST">
+        <p class="warning-message">POST</p>
+      </div>
+    </a>
+    <a href="news.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS">
+        <p class="warning-message">NEWS</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="nav-row">
+    <a href="about.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT">
+        <p class="warning-message">ABOUT</p>
+      </div>
+    </a>
+    <a href="contact.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT">
+        <p class="warning-message">CONTACT</p>
+      </div>
+    </a>
+  </div>
 </nav>
 
 <div class="content-box">
@@ -156,9 +201,9 @@
 
     <!-- TEXT RIGHT -->
     <div class="text-container">
-         <p>Hello and thank you for looking through our website! We know it's the 21st century and very few people ever go to a website anymore so thank you for taking the time.</p>
+      <p>Hello and thank you for looking through our website. We know it is the 21st century and very few people ever go to a website anymore so thank you for taking the time.</p>
       <p>As our roster of clients grew, so too have the scale of our projects.</p>
-      <p>We work with independent companies using the best tools necessary to make cutting edge graphics at a fraction of the cost. While we're a small VFX/post house for now, we have ambitions to take on even greater challenges as they come to us.</p>
+      <p>We work with independent companies using the best tools necessary to make cutting edge graphics at a fraction of the cost. While we are a small VFX and post house for now, we have ambitions to take on even greater challenges as they come to us.</p>
 
       <h2>Ross Kugman</h2>
       <p>Owner</p>
@@ -172,4 +217,3 @@
 
 </body>
 </html>
-
