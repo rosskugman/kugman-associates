@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>VFX | KUGMAN ASSOCIATES</title>
+  <title>NEWS | KUGMAN ASSOCIATES</title>
 
   <!-- GOOGLE FONTS -->
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
@@ -15,10 +15,16 @@
     }
 
     html,body{
-      margin:0;padding:0;background:#000;color:var(--text);
+      margin:0;
+      padding:0;
+      background:#000;
+      color:var(--text);
       font-family:'Space Mono', monospace;
     }
-    body{text-align:center;overflow-x:hidden;}
+    body{
+      text-align:center;
+      overflow-x:hidden;
+    }
 
     /* Headings */
     h1{
@@ -28,7 +34,6 @@
       margin: 20px 0;
     }
 
-    /* Headings */
     h2{
       font-family:'Orbitron', sans-serif;
       font-size: .8rem;
@@ -39,17 +44,40 @@
     /* Header */
     .header img{height:200px;}
 
-    /* Nav (folder buttons) */
+    /* Nav Layout */
     .nav-bar{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:10px;
+      margin:10px 0 20px 0;
+    }
+
+    .nav-row{
       display:flex;
       justify-content:center;
       gap:40px;
-      margin:10px 0 20px 0;
     }
+
     a{text-decoration:none;color:inherit;}
 
-    .image-button img{height:50px;width:auto;}
-    .warning-message{font-size:10px;margin:0;}
+    .folder-icon{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+    }
+
+    .folder-icon img{
+      height:50px;
+      width:auto;
+    }
+
+    .warning-message{
+      font-size:10px;
+      margin:4px 0 0;
+      text-align:center;
+    }
 
     /* Content */
     .content-box{
@@ -59,21 +87,22 @@
       border-radius:5px;
       max-width:800px;
       margin:20px auto 40px auto;
-      text-align:center;
+      text-align:left;
     }
 
-    .content-box video{
-      width:100%;
-      height:auto;
+    .content-box img{
+      width:600px;
+      max-width:90%;
       border:1px solid var(--border);
-      border-radius:5px;
-      margin-top:10px;
+      margin:10px auto;
+      display:block;
     }
 
     footer{
       font-size:10px;
       margin-top:40px;
       padding-bottom:20px;
+      text-align:center;
     }
   </style>
 </head>
@@ -82,43 +111,63 @@
 
 <header>
   <a href="home.html" class="header">
-    <img src="https://rosskugman.github.io/kugman-associates/KALogoY2K.png">
+    <img src="https://rosskugman.github.io/kugman-associates/KALogoY2K.png" alt="KUGMAN ASSOCIATES LOGO">
   </a>
 </header>
 
 <nav class="nav-bar">
-  <a href="vfx.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png"><p class="warning-message">VFX</p>
-  </a>
-  <a href="post.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png"><p class="warning-message">POST</p>
-  </a>
-  <a href="news.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png"><p class="warning-message">NEWS</p>
-  </a>
-  <a href="about.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png"><p class="warning-message">ABOUT</p>
-  </a>
-  <a href="contact.html" class="image-button">
-    <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png"><p class="warning-message">CONTACT</p>
-  </a>
+  <div class="nav-row">
+    <a href="vfx.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX">
+        <p class="warning-message">VFX</p>
+      </div>
+    </a>
+    <a href="post.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST">
+        <p class="warning-message">POST</p>
+      </div>
+    </a>
+    <a href="news.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS">
+        <p class="warning-message">NEWS</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="nav-row">
+    <a href="about.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT">
+        <p class="warning-message">ABOUT</p>
+      </div>
+    </a>
+    <a href="contact.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT">
+        <p class="warning-message">CONTACT</p>
+      </div>
+    </a>
+  </div>
 </nav>
 
 <div class="content-box">
 
   <h1>NEWS</h1>
 
-  <h1>Kugman Associates Celebrates a Standout First Year with LIVE NATION, KEANU REEVES, and MORE - 12/08/2025</h1>
+  <h1>Kugman Associates Celebrates a Standout First Year with LIVE NATION, KEANU REEVES, and MORE 12/08/2025</h1>
 
-  <img src="news20251208.png", width="600", alignment="center"/>  
+  <img src="news20251208.png" alt="First Year News">
 
-<p>Kugman Associates is proud to announce a successful first year marked by high profile collaborations across entertainment, technology, and cinema. The studio was engaged to support multiple projects within the aerospace industry, delivering visually precise and innovative media that helped communicate advanced engineering to wider audiences.</p>
+  <p>Kugman Associates is proud to announce a successful first year marked by high profile collaborations across entertainment, technology, and cinema. The studio was engaged to support multiple projects within the aerospace industry, delivering visually precise and innovative media that helped communicate advanced engineering to wider audiences.</p>
 
-<p>In music and culture, Kugman Associates partnered with Live Nation imprint Third + Hayden to produce dynamic digital content and campaign materials that elevated artists and connected with fans across platforms. The team also contributed VFX work to the highly anticipated Keanu Reeves initiative known as “The Arch Project,” bringing cinematic world-building into the realm of next generation experiences.
+  <p>In music and culture, Kugman Associates partnered with Live Nation imprint Third + Hayden to produce dynamic digital content and campaign materials that elevated artists and connected with fans across platforms. The team also contributed VFX work to the highly anticipated Keanu Reeves initiative known as The Arch Project, bringing cinematic world building into the realm of next generation experiences.</p>
 
-Alongside these accomplishments, Kugman Associates provided editing services for an upcoming feature film, further establishing its presence in the world of narrative storytelling. This first year reflects the company’s mission to bridge creativity with technical excellence, while continuing to grow its network of collaborators committed to bold and meaningful work.
+  <p>Alongside these accomplishments, Kugman Associates provided editing services for an upcoming feature film, further establishing its presence in the world of narrative storytelling. This first year reflects the companys mission to bridge creativity with technical excellence, while continuing to grow its network of collaborators committed to bold and meaningful work.</p>
 
-Kugman Associates looks forward to the road ahead as it continues to expand its capabilities and deliver standout results across mediums.</p>
+  <p>Kugman Associates looks forward to the road ahead as it continues to expand its capabilities and deliver standout results across mediums.</p>
 
 </div>
 
