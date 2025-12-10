@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NEWS | KUGMAN ASSOCIATES</title>
+
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --text: #ADFF2F;
+      --border: green;
+    }
+
+    html,body{
+      margin:0;
+      padding:0;
+      background:#000;
+      color:var(--text);
+      font-family:'Space Mono', monospace;
+    }
+    body{
+      text-align:center;
+      overflow-x:hidden;
+    }
+
+    /* Headings */
+    h1{
+      font-family:'Orbitron', sans-serif;
+      font-size: 1.3rem;
+      letter-spacing: 2px;
+      margin: 20px 0;
+    }
+
+    h2{
+      font-family:'Orbitron', sans-serif;
+      font-size: .8rem;
+      letter-spacing: 2px;
+      margin: 20px 0;
+    }
+
+    /* Header */
+    .header img{height:200px;}
+
+    /* Nav Layout */
+    .nav-bar{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:10px;
+      margin:10px 0 20px 0;
+    }
+
+    .nav-row{
+      display:flex;
+      justify-content:center;
+      gap:40px;
+    }
+
+    a{text-decoration:none;color:inherit;}
+
+    .folder-icon{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      text-align:center;
+    }
+
+    .folder-icon img{
+      height:50px;
+      width:auto;
+    }
+
+    .warning-message{
+      font-size:10px;
+      margin:4px 0 0;
+      text-align:center;
+    }
+
+    /* Content */
+    .content-box{
+      background:#000;
+      border:1px solid var(--border);
+      padding:20px;
+      border-radius:5px;
+      max-width:800px;
+      margin:20px auto 40px auto;
+      text-align:left;
+    }
+
+    .content-box img{
+      width:600px;
+      max-width:90%;
+      border:1px solid var(--border);
+      margin:10px auto;
+      display:block;
+    }
+
+    /* ⭐ Video border + sizing ⭐ */
+    .video-frame{
+      width:600px;
+      max-width:90%;
+      border:1px solid var(--border);
+      display:block;
+      margin:10px auto;
+    }
+
+    .video-frame video{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+
+    footer{
+      font-size:10px;
+      margin-top:40px;
+      padding-bottom:20px;
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <a href="home.html" class="header">
+    <img src="https://rosskugman.github.io/kugman-associates/KALogoY2K.png" alt="KUGMAN ASSOCIATES LOGO">
+  </a>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-row">
+    <a href="vfx.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="VFX">
+        <p class="warning-message">VFX</p>
+      </div>
+    </a>
+    <a href="editing.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="POST">
+        <p class="warning-message">EDITING</p>
+      </div>
+    </a>
+    <a href="news.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="NEWS">
+        <p class="warning-message">NEWS</p>
+      </div>
+    </a>
+  </div>
+
+  <div class="nav-row">
+    <a href="about.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="ABOUT">
+        <p class="warning-message">ABOUT</p>
+      </div>
+    </a>
+    <a href="contact.html" class="image-button">
+      <div class="folder-icon">
+        <img src="https://rosskugman.github.io/kugman-associates/folderbutton.png" alt="CONTACT">
+        <p class="warning-message">CONTACT</p>
+      </div>
+    </a>
+  </div>
+</nav>
+
+<div class="content-box">
+
+  <h1>EDITING</h1>
+
+  <h2>CLICK BELOW TO WATCH</h2>
+
+  <!-- ⭐ FIXED VIDEO WITH BORDER ⭐ -->
+  <div class="video-frame">
+    <video controls>
+      <source src="reel.mov">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+</div>
+
+<footer><p>&copy; 2025 KUGMAN ASSOCIATES. All rights reserved.</p></footer>
+
+</body>
+</html>
